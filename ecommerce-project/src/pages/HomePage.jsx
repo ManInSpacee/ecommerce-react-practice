@@ -1,9 +1,13 @@
 import React from 'react';
 import './header.css'
 import './HomePage.css'
+
+
 const HomePage = () => {
   return (
     <div>
+      <title>Ecommerce Project</title>
+
       <div className="header">
         <div className="left-section">
           <a href="index.html" className="header-link">
