@@ -12,8 +12,8 @@ const CheckoutPage = () => {
         <div className="header-content">
           <div className="checkout-header-left-section">
             <a href="/">
-              <img className="logo" src="images/logo.png"/>
-              <img className="mobile-logo" src="images/mobile-logo.png"/>
+              <img className="logo" src="src/assets/images/logo.png"/>
+              <img className="mobile-logo" src="src/assets/images/mobile-logo.png"/>
             </a>
           </div>
 
@@ -23,7 +23,7 @@ const CheckoutPage = () => {
           </div>
 
           <div className="checkout-header-right-section">
-            <img src="images/icons/checkout-lock-icon.png"/>
+            <img src="src/assets/images/icons/checkout-lock-icon.png"/>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ const CheckoutPage = () => {
 
               <div className="cart-item-details-grid">
                 <img className="product-image"
-                     src="images/products/athletic-cotton-socks-6-pairs.jpg"/>
+                     src="src/assets/images/products/athletic-cotton-socks-6-pairs.jpg"/>
 
                 <div className="cart-item-details">
                   <div className="product-name">
@@ -116,7 +116,7 @@ const CheckoutPage = () => {
 
               <div className="cart-item-details-grid">
                 <img className="product-image"
-                     src="images/products/intermediate-composite-basketball.jpg"/>
+                     src="src/assets/images/products/intermediate-composite-basketball.jpg"/>
 
                 <div className="cart-item-details">
                   <div className="product-name">
