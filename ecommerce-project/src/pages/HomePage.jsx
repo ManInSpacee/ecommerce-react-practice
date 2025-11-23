@@ -6,7 +6,7 @@ import Header from "../components/Header.jsx";
 const HomePage = () => {
   return (
     <div>
-      <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+      <link rel="icon" type="image/svg+xml" href="src/assets/images/icons/home-favicon.png"/>
       <title>Ecommerce Project</title>
 
 

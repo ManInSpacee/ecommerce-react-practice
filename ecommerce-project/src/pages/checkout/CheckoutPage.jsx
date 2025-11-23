@@ -6,9 +6,10 @@ import CheckoutHeader from "./CheckoutHeader.jsx";
 const CheckoutPage = () => {
   return (
     <div>
+      <link rel="icon" type="image/svg+xml" href="src/assets/images/icons/cart-favicon.png"/>
       <title>Checkout</title>
 
-      <CheckoutHeader />
+      <CheckoutHeader/>
 
       <div className="checkout-page">
         <div className="page-title">Review your order</div>
