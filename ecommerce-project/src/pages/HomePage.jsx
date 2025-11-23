@@ -6,10 +6,11 @@ import Header from "../components/Header.jsx";
 const HomePage = () => {
   return (
     <div>
+      <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
       <title>Ecommerce Project</title>
 
 
-      <Header />
+      <Header/>
       <div className="home-page">
         <div className="products-grid">
           <div className="product-container">
