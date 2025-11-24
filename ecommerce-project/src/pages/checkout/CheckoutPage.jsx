@@ -1,6 +1,6 @@
 import React from 'react';
 import './CheckoutPage.css';
-import CheckoutHeader from "./CheckoutHeader.jsx";
+import CheckoutHeader from "./checkoutHeader/CheckoutHeader.jsx";
 
 
 const CheckoutPage = () => {

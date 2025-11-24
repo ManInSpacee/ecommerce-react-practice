@@ -4,7 +4,7 @@ import Header from "../components/Header.jsx";
 
 const OrdersPage = () => {
   return (
-    <div>
+    <>
       <link rel="icon" type="image/svg+xml" href="src/assets/images/icons/orders-favicon.png"/>
       <title>Orders</title>
 
@@ -146,7 +146,7 @@ const OrdersPage = () => {
         </div>
       </div>
 
-    </div>
+    </>
   );
 };
 

@@ -2,19 +2,21 @@ import React from 'react';
 import './general.css'
 import './Tracking.css'
 import Header from "../components/Header.jsx";
+import {Link} from "react-router";
 
 const Tracking = () => {
   return (
-    <div>
+    <>
+      <link rel="icon" type="image/svg+xml" href="src/assets/images/icons/tracking-favicon.png"/>
       <title>Tracking</title>
 
-      <Header />
+      <Header/>
 
       <div className="tracking-page">
         <div className="order-tracking">
-          <a className="back-to-orders-link link-primary" href="/orders">
+          <Link className="back-to-orders-link link-primary" to="/orders">
             View all orders
-          </a>
+          </Link>
 
           <div className="delivery-date">
             Arriving on Monday, June 13
@@ -47,7 +49,7 @@ const Tracking = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

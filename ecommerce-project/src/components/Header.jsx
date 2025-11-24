@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavLink} from 'react-router';
-import '../pages/Header.css'
+import './Header.css'
 
 const Header = () => {
   return (
-    <div>
+    <>
       <div className="header">
         <div className="left-section">
           <NavLink to="/" className="header-link">
@@ -36,7 +36,7 @@ const Header = () => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
