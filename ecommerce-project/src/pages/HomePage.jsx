@@ -1,15 +1,13 @@
-import React from 'react';
+import axios from 'axios';
 import './HomePage.css';
 import Header from "../components/Header.jsx";
 import { products } from "../../startring-code/data/products.js";
 
 const HomePage = () => {
 
-  fetch('http://localhost:3000/api/products')
+  axios.get('http://localhost:3000/api/products')
     .then((response) => {
-      return response.json()
-        }).then((data) => {
-          console.log(data);
+      console.log(response.data);
     })
 
 
