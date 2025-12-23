@@ -10,12 +10,12 @@ const HomePage = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/products')
+    axios.get('/api/products')
       .then((response) => {
         setProducts(response.data);
       })
 
-    axios.get('http://localhost:3000/api/cart-items')
+    axios.get('/api/cart-items')
       .then((response) => {
         setCart(response.data);
       })
@@ -37,7 +37,7 @@ const HomePage = () => {
               <div key={product.id} className="product-container">
                 <div className="product-image-container">
                   <img className="product-image"
-                       src={'src/assets/' + product.image} alt={product.name}/>
+                       src={product.image} alt={product.name}/>
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
