@@ -1,9 +1,9 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import './OrdersPage.css';
-import Header from "../components/Header.jsx";
+import Header from "../../components/Header.jsx";
 import axios from "axios";
 import dayjs from "dayjs";
-import {formatMoney} from "../utils/money.js";
+import {formatMoney} from "../../utils/money.js";
 
 const OrdersPage = ({cart}) => {
 
