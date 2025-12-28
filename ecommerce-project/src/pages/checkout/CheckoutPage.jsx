@@ -6,7 +6,7 @@ import {formatMoney} from "../../utils/money.js";
 import OrderSummary from "./OrderSummary.jsx";
 import PaymentSummary from "./PaymentSummary.jsx";
 
-const CheckoutPage = ({ cart }) => {
+const CheckoutPage = ({ cart, loadCart}) => {
 
   const [deliveryOptions, setDeliveryOptions] = useState([]);
   const [paymentSummary, setPaymentSummary] = useState(null);
@@ -23,7 +23,7 @@ const CheckoutPage = ({ cart }) => {
       setPaymentSummary(response.data);
     };
     fetchCheckoutData();
-  }, []);
+  }, [cart]);
 
   return (
     <div>
@@ -36,7 +36,7 @@ const CheckoutPage = ({ cart }) => {
         <div className="page-title">Review your order</div>
 
         <div className="checkout-grid">
-          <OrderSummary deliveryOptions={deliveryOptions} cart={cart} />
+          <OrderSummary deliveryOptions={deliveryOptions} cart={cart} loadCart={loadCart}/>
           <PaymentSummary paymentSummary={paymentSummary} />
         </div>
       </div>

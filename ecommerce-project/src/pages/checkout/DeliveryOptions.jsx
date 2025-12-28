@@ -3,7 +3,7 @@ import {formatMoney} from "../../utils/money.js";
 import dayjs from "dayjs";
 import axios from "axios";
 
-const DeliveryOptions = ({deliveryOptions, cartItem, loadCart}) => {
+const DeliveryOptions = ({ deliveryOptions, cartItem, loadCart }) => {
   return (
     <>
       <div className="delivery-options">
@@ -17,12 +17,14 @@ const DeliveryOptions = ({deliveryOptions, cartItem, loadCart}) => {
           if (deliveryOption.priceCents > 0) {
             priceString = `${formatMoney(deliveryOption.priceCents)} - Shipping`;
           }
+
           const updateDeliveryOption = async () => {
             await axios.put(`/api/cart-items/${cartItem.productId}`, {
               deliveryOptionId: deliveryOption.id
             });
             await loadCart();
-          }
+          };
+
 
           return (
             <div key={deliveryOption.id} className="delivery-option"
