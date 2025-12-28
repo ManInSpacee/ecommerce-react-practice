@@ -1,7 +1,7 @@
 import React from 'react';
 import {formatMoney} from "../../utils/money.js";
 
-const CartItemDetails = ({ cartItem }) => {
+const CartItemDetails = ({ cartItem, deleteCartItem }) => {
   return (
     <>
       <img className="product-image" src={cartItem.product.image}/>
@@ -22,7 +22,8 @@ const CartItemDetails = ({ cartItem }) => {
           <span className="update-quantity-link link-primary">
                       Update
                     </span>
-          <span className="delete-quantity-link link-primary">
+          <span className="delete-quantity-link link-primary"
+          onClick={deleteCartItem}>
                       Delete
                     </span>
         </div>
