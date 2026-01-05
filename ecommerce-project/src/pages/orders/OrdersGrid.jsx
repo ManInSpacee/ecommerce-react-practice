@@ -4,7 +4,7 @@ import {formatMoney} from "../../utils/money.js";
 import OrderDetailsGrid from "./OrderDetailsGrid.jsx";
 import OrderHeader from "./OrderHeader.jsx";
 
-const OrdersGrid = ({ orders }) => {
+const OrdersGrid = ({ orders, loadCart }) => {
   return (
     <>
       <div className="orders-grid">
@@ -12,7 +12,7 @@ const OrdersGrid = ({ orders }) => {
           return (
             <div key={order.id} className="order-container">
               <OrderHeader order={order} />
-              <OrderDetailsGrid order={order} />
+              <OrderDetailsGrid order={order} loadCart={loadCart} />
             </div>
           );
         })}

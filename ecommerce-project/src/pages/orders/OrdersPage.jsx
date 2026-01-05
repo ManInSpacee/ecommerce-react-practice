@@ -2,11 +2,9 @@ import React, {Fragment, useEffect, useState} from 'react';
 import './OrdersPage.css';
 import Header from "../../components/Header.jsx";
 import axios from "axios";
-import dayjs from "dayjs";
-import {formatMoney} from "../../utils/money.js";
 import OrdersGrid from "./OrdersGrid.jsx";
 
-const OrdersPage = ({cart}) => {
+const OrdersPage = ({ cart, loadCart }) => {
 
   const [orders, setOrders] = useState([]);
 
@@ -28,7 +26,7 @@ const OrdersPage = ({cart}) => {
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
 
-        <OrdersGrid orders={orders} />
+        <OrdersGrid orders={orders} loadCart={loadCart}/>
       </div>
 
     </>
