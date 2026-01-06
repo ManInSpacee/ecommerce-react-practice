@@ -8,7 +8,7 @@ const Product = ({ product, loadCart }) => {
 
   const [quantity, setQuantity] = useState(1);
   const addToCart = async () => {
-    await axios.post('api/cart-items', {
+    await axios.post('/api/cart-items', {
       productId: product.id,
       quantity
     });
@@ -74,6 +74,7 @@ const Product = ({ product, loadCart }) => {
         </div>
 
         <button className="add-to-cart-button button-primary"
+                data-testid="add-to-cart-button"
                 onClick={addToCart}>
           Add to Cart
         </button>
