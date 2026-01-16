@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {formatMoney} from "../../utils/money.js";
+import {formatMoney} from "../../utils/money.ts";
 import axios from "axios";
 
 const CartItemDetails = ({ cartItem, deleteCartItem, loadCart }) => {

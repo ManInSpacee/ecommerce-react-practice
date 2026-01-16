@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './general.css'
 import './Tracking.css'
-import Header from "../components/Header.jsx";
+import Header from "../components/Header.tsx";
 import {Link, useParams} from "react-router";
 import axios from "axios";
 import dayjs from "dayjs";

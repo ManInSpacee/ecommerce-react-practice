@@ -1,6 +1,6 @@
 import React from 'react';
 import dayjs from "dayjs";
-import {formatMoney} from "../../utils/money.js";
+import {formatMoney} from "../../utils/money.ts";
 import DeliveryOptions from "./DeliveryOptions.jsx";
 import CartItemDetails from "./CartItemDetails.jsx";
 import DeliveryDate from "./DeliveryDate.jsx";

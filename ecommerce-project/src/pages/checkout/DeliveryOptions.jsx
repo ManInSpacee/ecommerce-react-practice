@@ -1,5 +1,5 @@
 import React from 'react';
-import {formatMoney} from "../../utils/money.js";
+import {formatMoney} from "../../utils/money.ts";
 import dayjs from "dayjs";
 import axios from "axios";
 

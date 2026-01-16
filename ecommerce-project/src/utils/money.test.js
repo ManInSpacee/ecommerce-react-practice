@@ -1,5 +1,5 @@
 import { it, expect, describe } from 'vitest';
-import { formatMoney} from "./money.js";
+import { formatMoney} from "./money.ts";
 
 
 describe('formatMoney', () => {

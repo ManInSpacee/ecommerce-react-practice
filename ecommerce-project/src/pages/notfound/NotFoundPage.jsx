@@ -1,6 +1,6 @@
 import React from 'react';
 import './NotFoundPage.css'
-import Header from "../../components/Header.jsx";
+import Header from "../../components/Header.tsx";
 
 const NotFoundPage = ({cart}) => {
   return (

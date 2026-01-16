@@ -1,8 +1,15 @@
-import React, {useState} from 'react';
 import {NavLink, useNavigate, useSearchParams} from 'react-router';
 import './Header.css'
 
-const Header = ({cart}) => {
+type HeaderProps = {
+    cart: {
+        productId: string;
+        quantity: number;
+        deliveryOptionId: string;
+    }[];
+}
+
+const Header = ({ cart }: HeaderProps) => {
 
   const navigate = useNavigate();
 

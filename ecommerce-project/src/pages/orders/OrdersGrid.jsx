@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import dayjs from "dayjs";
-import {formatMoney} from "../../utils/money.js";
+import {formatMoney} from "../../utils/money.ts";
 import OrderDetailsGrid from "./OrderDetailsGrid.jsx";
 import OrderHeader from "./OrderHeader.jsx";
 
