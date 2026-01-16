@@ -30,7 +30,7 @@ const Header = ({cart}) => {
     <>
       <div className="header">
         <div className="left-section">
-          <NavLink to="/ecommerce-project%20copy/public" className="header-link">
+          <NavLink to="/oldProjects/ecommerce-project-js/public" className="header-link">
             <img className="logo"
                  src="src/assets/images/logo-white.png"/>
             <img className="mobile-logo"

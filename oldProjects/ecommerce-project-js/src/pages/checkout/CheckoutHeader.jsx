@@ -17,7 +17,7 @@ const CheckoutHeader = ({cart}) => {
       <div className="checkout-header">
         <div className="header-content">
           <div className="checkout-header-left-section">
-            <Link to="/ecommerce-project%20copy/public">
+            <Link to="/oldProjects/ecommerce-project-js/public">
               <img className="logo" src="src/assets/images/logo.png"/>
               <img className="mobile-logo" src="src/assets/images/mobile-logo.png"/>
             </Link>
@@ -25,7 +25,7 @@ const CheckoutHeader = ({cart}) => {
 
           <div className="checkout-header-middle-section">
             Checkout (<Link className="return-to-home-link"
-                         to="/ecommerce-project%20copy/public">{totalQuantity} items</Link>)
+                         to="/oldProjects/ecommerce-project-js/public">{totalQuantity} items</Link>)
           </div>
 
           <div className="checkout-header-right-section">
